@@ -15,9 +15,8 @@ USER root
 
 # Populate example here - i.e. "cat", "sha512sum" or "node index.js"
 SHELL [ "pwsh", "-command" ]
-ENV fprocess="xargs pwsh ./script.ps1"
-COPY script.ps1 .
-RUN chmod a+x script.ps1
+ENV fprocess="xargs pwsh ./function/script.ps1"
+COPY function function
 # Set to true to see request in function logs
 ENV write_debug="true"
 
