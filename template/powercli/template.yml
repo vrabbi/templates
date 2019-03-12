@@ -1,0 +1,3 @@
+language: powercli
+fprocess: pwsh function/script.ps1
+
